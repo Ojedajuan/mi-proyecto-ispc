@@ -1,19 +1,18 @@
-
 # Mi Proyecto ISPC
 
-- INICIO: Stefi
+- INICIO (MODULO HOME): Stefi
 
-- NOSOTROS: Emma
+- NOSOTROS (MODULO HOME): Emma
 
-- CONTACTO: Juanca
+- CONTACTO (MODULO HOME): Juanca
 
-- SERVICIOS: Facu
+- SERVICIOS (MODULO SERVICIOS): Facu
 
-- CARRITO: Ale
+- CARRITO (MODULO PAGOS): Ale
 
-- LOGIN: Tammi
+- LOGIN (MODULO AUTH): Tammi
 
-- REGISTRO: Tammi
+- REGISTRO (MODULO AUTH): Tammi
 
 # Folder Structure Example
 
@@ -296,25 +295,3 @@ export class GithubRoutingModule {}
 
 - _/app/src/github/github.module.ts_
 
-```ts
-import { NgModule } from "@angular/core";
-import { GithubRoutingModule } from "./github-routing.module";
-
-import { RepoListComponent } from "./pages";
-
-import { SharedModule } from "../shared";
-
-@NgModule({
-  imports: [GithubRoutingModule, SharedModule],
-  providers: [],
-  declarations: [RepoListComponent],
-})
-export class GithubModule {}
-```
-
-- _/app/src/github/index.ts_
-
-```ts
-export _ from './pages';
-export _ from './github.module';
-```
